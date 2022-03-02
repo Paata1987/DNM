@@ -1,0 +1,61 @@
+<main class="container mt-3 mb-3">
+
+    <div class="col p-3 m-3 h-text">
+        <h4>Stikktittel</h4>
+    </div>
+    <div class="col  p-3 m-3 h-text">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, a velit necessitatibus expedita laboriosam vero.</h2>
+    </div>
+      
+<!-- sorting components -->
+    <div class="d-flex contentAligne p-3 m-3 h-text flex-wrap">
+            <div class="col p-3">
+                <button type="button" class="btn  btn-lg rounded-pill"  [ngClass]="{ 'btn-outline':activeCheck,  'btn': activeCheck=='0'}" (click)="GetDataFromDB('0')"> Vis alle (all) </button>
+            </div>
+            <div class="col p-3">
+                <button type="button" class="btn  btn-lg rounded-pill" [ngClass]="{ 'btn-outline':activeCheck,  'btn': activeCheck=='8'}"  (click)="GetDataFromDB('8')"> Lorem ipsum (8) </button>
+            </div>
+            <div class="col p-3">
+                <button type="button" class="btn  btn-lg rounded-pill" [ngClass]="{ 'btn-outline':activeCheck,  'btn': activeCheck=='16'}"  (click)="GetDataFromDB('16')"> Dolor sit (16) </button>
+            </div>
+        
+            <div class="col p-3">
+                <button type="button" class="btn btn-lg rounded-pill" [ngClass]="{ 'btn-outline':activeCheck,  'btn': activeCheck=='4'}"  (click)="GetDataFromDB('4')"> Amet consectetur (4)</button>
+            </div>
+            <div class="col p-3">
+                <button type="button" class="btn  btn-lg rounded-pill " [ngClass]="{ 'btn-outline':activeCheck,  'btn': activeCheck=='6'}"  (click)="GetDataFromDB('6')"> Adipiscing selit (6) </button>
+            </div>
+            <div class="col p-3">
+                <button type="button" class="btn  btn-lg rounded-pill" [ngClass]="{ 'btn-outline':activeCheck,  'btn': activeCheck=='20'}"  (click)="GetDataFromDB('20')"> Semper (20) </button>
+            </div>
+    </div>
+
+<!--main  components -->
+    <div class="row mb-3 mt-3" >
+        <div class="col card-main" *ngFor="let item of circleList">
+            <button class=" btn btn-light btn-circle  " (click)="openSelect(item.id)" type="button"  style=background-color:{{item.color}}  ></button>
+            <div class="row" *ngIf="show[item.id]">
+                <div class=" arrow_box "></div>
+                <div class="collapseMain overflow-auto">
+                    <div class="col-6">
+                        <h1>{{item. tittel}}</h1>
+                        <h4>Kategori: <p>{{item.category}}</p></h4>
+                        <svg class=" rounded-circle position-relative d-none d-md-block"  >
+                            <rect  style=fill:{{item.color}}  />
+                        </svg>
+                    </div>
+                    <div class="col-6">
+                        <button class="close" type="button" #closebutton (click)="close()">X</button>
+                        <h2>{{item. tittel}}</h2>
+                        <p>{{item.text}}</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- footer -->
+    <div class="footer">
+        
+    </div>
+</main>

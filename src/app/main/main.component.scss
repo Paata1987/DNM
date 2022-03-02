@@ -1,0 +1,193 @@
+
+
+main.container{
+   width: 1400px;
+   background-color:#ffffff;
+   
+    .card-body{
+        text-align-last:left;
+    }
+    .card-main{
+        text-align: center;
+    }
+    .h-text{
+        width:90%;
+        h4 {
+            margin-top: 30px;
+            margin-left: 50px;
+            color: #220050;
+            text-align-last:left;
+        }
+        h2{
+            margin-left: 50px;
+            margin-bottom: 50px;
+            font-size: 4.5ch;
+            font-weight: 600;
+            text-align-last:left;
+        }
+    }
+
+    div{
+        svg{
+            margin: 50px;
+            height: 350px;
+            width: 350px;
+        }
+        .col .p-3{
+            margin: 50px;
+        }
+    }
+
+    .row {
+        div.col>h1,h2{
+           padding-left:  50px;
+           margin-top: 50px;
+           margin-left: 50px;
+           font-weight: 700;
+        }
+        h2{
+            padding: 20px;
+            margin: 20px;
+        }
+        h1{
+            font-weight: 900;
+            color: #b63838;
+            margin-left: 50px;
+            margin-top: 15px;
+            padding-top: 15px;
+        }
+        h4{
+            margin-left: 50px;
+            margin-top: 15px;
+            padding-top: 5px;
+        }
+    }
+
+    p{
+        font-weight: 300;
+        font-size: 2.0ch;
+        margin: 20px;
+    }
+
+    //card picture size
+    rect {
+        width: 400px;
+        height: 400px;
+    }
+
+    //circle button  
+
+    button.btn-circle{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin: 10px;
+        position: relative;
+        
+        &:hover {
+            color: transparent;
+            border-color: transparent;
+            transform: scale(1.02);
+        };
+        &:active {
+            border-width:15px;
+            border-radius:50%;
+            border-color:rgba(253, 253, 253, 0.466);
+        }
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(253, 253, 253, 0.466);;
+            border-width:18px;
+            border-radius:50%;
+            border-color:rgba(253, 253, 253, 0.466);
+        }
+    }
+
+    // filter buttons
+    button.btn-lg{
+        color:#220050;
+        overflow-x: clip;
+        width: 90%;
+        max-height: 50px;
+        border-color:#220050;
+
+        
+        &:hover {
+            background-color: #220050;
+            color: aliceblue;
+            border-color: transparent;
+            border-color:#220050;
+            transform: scale(1.1);
+        };
+        &:active {
+            color: aliceblue;
+            border-color:#220050;
+            background-color: #220050;
+            border-color:#220050;
+            outline: none;
+            background:#220050;
+            
+        }
+        &:focus {
+            color: #fff;
+            background-color: #220050;
+            border-color:#220050;
+            background:#220050;
+            transform: scale(1.08);
+        }
+    }
+
+    .contentAligne{
+        width:95%;
+        align-content: center;
+        text-align: center;
+    }
+
+
+    // card> arrow css
+    .arrow_box {
+        position: relative;
+        background: #f3efee;
+        margin-top: 50px;
+        height: 800px;
+    }
+    .arrow_box:after {
+        bottom: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        position: absolute;
+        border-bottom-color: #f3efee;
+        border-width: 30px;
+       // display: flex;
+    }
+
+    //footer css
+    div.footer{
+        height: 500px;
+        background-color:#7e0626;
+        background:#7e0626;
+        margin-left: 0%;
+        padding-left: 0%;
+        }
+}
+
+//mainc card css
+.collapseMain{
+    position: absolute;
+    margin-top: 50px;
+    background-color:#f3efee;
+    height: 800px;
+    max-width: 1320px;
+    display: flex;
+    overflow-wrap: break-word; 
+}
+
+.close{
+    font-size: xx-large;
+    font-weight: 600;
+    border: none;
+    padding: 20px;
+    padding-left: 70%;
+    position: relative;
+}
