@@ -1,0 +1,36 @@
+h1{
+        
+        font-size: 6.5ch;
+        font-weight: 600;
+}
+
+header.container{
+    background-color:rgb(151, 150, 150); 
+    height: 700px;
+}
+
+svg.avatar{
+    position:relative;
+    width: 100px; 
+    height: 100px;
+}
+
+rect.avatar{
+    width: 100px;
+    height: 100px;
+    fill:#EFEfEf
+}
+
+svg{
+    height: 250px;
+    width: 250px;
+}
+
+rect {
+    width: 250px;
+    height: 250px;
+}
+
+.h-text>h4, h2, button, svg{
+    margin-left: 50px;
+}
